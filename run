@@ -1,0 +1,38 @@
+#!/bin/bash
+
+mk () {
+	cd $1
+	cd b
+	echo "load $1.elf" > run_cmds
+	echo "cont" >> run_cmds
+	echo "q" >> run_cmds
+	echo "y" >> run_cmds
+	g 0 --command=run_cmds
+	cd ../..
+}
+
+mk day1
+mk day2
+mk day3
+mk day4
+mk day5
+mk day6
+mk day7
+mk day8
+mk day9
+mk day10
+mk day11
+mk day12
+mk day13
+mk day14
+mk day15
+mk day16
+mk day17
+mk day18
+mk day19
+mk day20
+mk day21
+mk day22
+mk day23
+mk day24
+mk day25
